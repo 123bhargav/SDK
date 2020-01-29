@@ -1,0 +1,12 @@
+#AMI Used is Ubuntu Linux
+
+#!bin/bash
+Ubuntu Server 14.04 LTS
+sudo su
+cd
+apt-get update -y
+apt-get install apache2 -y
+service apache2 start
+chkconfig apache2 on
+cd /var/www/html
+git clone https://github.com/vCloudmateguru/ion.git
